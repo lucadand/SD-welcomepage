@@ -1,0 +1,82 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+@font-face {
+  font-family: 'Nandos Hand Alt';
+  src: url('../../src/fonts/Nandos/NandosHandAlt.ttf') format('truetype');
+}
+
+html{
+  
+  overflow: hidden;
+}
+
+h1{
+  margin: 0;
+  margin-bottom: -3rem;
+}
+
+body{
+  margin: 0;
+}
+
+.Header {
+  padding: 6rem;
+}
+
+.Header{
+  text-align: center;
+  font-size: 3.8rem;  
+}
+
+.Body {
+  background-image: url("./WELCOMEPAGE.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Container{
+    display:flex;
+}
+
+.QRcode {
+  width: 25%;
+  height: 25%;
+  display: flex;
+  margin: auto;
+}
+
+.QR{
+  height: 100%;
+  width: 100%;
+  font-size: 3.8rem;
+  text-align: center;
+  padding-bottom: 8rem;
+  margin: 0;
+}
+
+
+
+//Responsive part of the page
+@media screen and (max-width: 900px) {
+    .QRcode{
+      font-size: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .QRcode, .QR{
+      font-size: 2rem;
+    }
+  }
+
+@media screen and (max-width: 992px) {
+    .Header, .QR{
+      font-size: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .Header, .QR{
+        font-size: 2rem;
+    }
+  }
